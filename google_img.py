@@ -28,7 +28,7 @@ def find_urls(inp,url,driver,iterate):
         imgurl = driver.find_element_by_xpath('//div//div//div//div//div//div//div//div//div//div['+str(j)+']//a[1]//div[1]//img[1]')
         imgurl.click()
         time.sleep(15)
-        img = driver.find_element_by_xpath('//body/div/c-wiz/div/div/div/div/div/div/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]/img[1]').get_attribute("src")
+        img = driver.find_element_by_xpath('//body/div[2]/c-wiz/div[3]/div[2]/div[3]/div/div/div[3]/div[2]/c-wiz/div[1]/div[1]/div/div[2]/a/img').get_attribute("src")
         save_img(inp,img,j)
             
 
