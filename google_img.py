@@ -4,8 +4,9 @@ import requests
 import shutil
 import os
 
+user = os.getlogin()
 driver = webdriver.Chrome()
-directory = 'C:\\Users\eMeSeN\Desktop\instaPhotos\google'
+directory = 'C:\\Users'+'\\'+user+'\Desktop'
 inp = input("Enter what you wanna search?")
 url = 'https://www.google.com/search?q='+str(inp)+'&source=lnms&tbm=isch&sa=X&ved=2ahUKEwie44_AnqLpAhUhBWMBHUFGD90Q_AUoAXoECBUQAw&biw=1920&bih=947'
 iterate = int(input("Enter how many pics?"))
